@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+   >
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Field of interest"
+        android:id="@+id/fieldOfInterestTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/fieldOfInterestEditText"
+        android:layout_below="@+id/fieldOfInterestTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Skills"
+        android:id="@+id/skillsTextView"
+        android:layout_below="@+id/fieldOfInterestEditText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/skillsEditText"
+        android:layout_below="@+id/skillsTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Strengths"
+        android:id="@+id/strengthsTextView"
+        android:layout_below="@+id/skillsEditText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/strengthsEditText"
+        android:layout_below="@+id/strengthsTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hobbies"
+        android:id="@+id/hobbiesTextView"
+        android:layout_below="@+id/strengthsEditText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/hobbiesEditText"
+        android:layout_below="@+id/hobbiesTextView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:fontFamily="serif"
+        android:textColor="#FFFFFF"
+        android:background="#EA1F64"
+
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Next"
+        android:textSize="17sp"
+        android:id="@+id/nextButtonField"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
+</RelativeLayout>

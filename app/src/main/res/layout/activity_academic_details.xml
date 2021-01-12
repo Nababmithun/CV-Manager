@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#FFFFFF"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+   >
+
+    <TextView
+        android:fontFamily="serif"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Academic Details"
+        android:id="@+id/academicDetailsTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Course/Degree"
+        android:id="@+id/courseTextView"
+        android:layout_below="@+id/academicDetailsTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/courseEditText"
+        android:layout_below="@+id/courseTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Marks secured"
+        android:layout_marginTop="10dp"
+        android:id="@+id/marksSecuredTextView"
+        android:layout_below="@+id/courseEditText"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/marksSecuredRadioGroup"
+        android:layout_below="@+id/marksSecuredTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp">
+
+    <RadioButton
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Percentage"
+        android:id="@+id/percentageRadioButton"
+        android:checked="false"
+        android:layout_below="@+id/marksSecuredTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/cgpaRadioButton" />
+
+    <RadioButton
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CGPA"
+        android:id="@+id/cgpaRadioButton"
+        android:checked="false"
+        android:layout_alignTop="@+id/percentageRadioButton"
+        android:layout_centerHorizontal="true" />
+
+    </RadioGroup>
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/marksSecuredEditText"
+        android:layout_alignBottom="@+id/marksSecuredRadioGroup"
+        android:layout_toEndOf="@+id/courseTextView"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Year of passing"
+        android:layout_marginTop="10dp"
+        android:id="@+id/yearOfPassingTextView"
+        android:layout_below="@+id/marksSecuredRadioGroup"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yearOfPassingRadioGroup"
+        android:layout_below="@+id/yearOfPassingTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp">
+
+        <RadioButton
+            android:fontFamily="serif"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Graduated"
+            android:id="@+id/garduatedRadioButton"
+            android:checked="false" />
+
+        <RadioButton
+            android:fontFamily="serif"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pursuing"
+            android:id="@+id/pursuingRadioButton"
+            android:checked="false" />
+    </RadioGroup>
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/yearOfPassingEditText"
+        android:layout_alignBottom="@+id/yearOfPassingRadioGroup"
+        android:layout_alignStart="@+id/marksSecuredEditText"
+        android:layout_alignEnd="@+id/marksSecuredEditText" />
+
+    <Button
+        android:fontFamily="serif"
+
+        android:background="#EA1F64"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Next"
+        android:id="@+id/nextButtonAcademic"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/yearOfPassingEditText"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

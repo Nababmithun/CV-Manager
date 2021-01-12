@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+ >
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Title"
+        android:layout_marginTop="35dp"
+        android:id="@+id/titleTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleEditText"
+        android:layout_below="@+id/titleTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Description"
+        android:id="@+id/descriptionTextView"
+        android:layout_below="@+id/titleEditText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/descriptionEditText"
+        android:layout_below="@+id/descriptionTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Role"
+        android:id="@+id/RoleTextView"
+        android:layout_below="@+id/descriptionEditText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/roleEditText"
+        android:layout_below="@+id/RoleTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Team Strength"
+        android:id="@+id/teamStrengthTextView"
+        android:layout_below="@+id/roleEditText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/teamStrengthEditText"
+        android:layout_below="@+id/teamStrengthTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Duration (in months)"
+        android:id="@+id/durationTextView"
+        android:layout_below="@+id/teamStrengthEditText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/durationEditText"
+        android:layout_below="@+id/durationTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/teamStrengthEditText" />
+
+    <Button
+        android:fontFamily="serif"
+        android:textColor="#FFFFFF"
+        android:background="#EA1F64"
+
+        android:onClick="saveButtonProject"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Save"
+        android:layout_marginTop="30dp"
+        android:textSize="19sp"
+        android:layout_below="@+id/durationEditText"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

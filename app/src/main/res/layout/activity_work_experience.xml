@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="#FFFFFF"
+
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+   >
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Work Experience Details"
+        android:id="@+id/workExperienceTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Organization"
+        android:id="@+id/organizationTextView"
+        android:layout_below="@+id/workExperienceTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp" />
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/organizationEditText"
+        android:layout_below="@+id/organizationTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:fontFamily="serif"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Designation / Position"
+        android:id="@+id/designationTextView"
+        android:layout_below="@+id/organizationEditText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/designationEditText"
+        android:layout_below="@+id/designationTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Time period of work"
+        android:id="@+id/timePeriodTextView"
+        android:layout_below="@+id/designationEditText"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/timePeriodTextView"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:fontFamily="serif"
+
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:text="Previously Employed"
+            android:textSize="16sp"
+            android:id="@+id/previouslyEmployedRadioButton"
+            android:checked="false" />
+
+        <RadioButton
+            android:fontFamily="serif"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currently Employed"
+            android:textSize="16sp"
+            android:id="@+id/currentlyEmployedRadioButton"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:hint="From"
+        android:id="@+id/fromEditText"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/organizationTextView" />
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:hint="To"
+        android:id="@+id/toEditText"
+        android:layout_alignBottom="@+id/fromEditText"
+        android:layout_toEndOf="@+id/timePeriodTextView" />
+
+    <TextView
+        android:fontFamily="serif"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Role played"
+        android:id="@+id/roleTextView"
+        android:layout_below="@+id/fromEditText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:fontFamily="serif"
+
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/rolePlayedEditText"
+        android:layout_below="@+id/roleTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/workExperienceTextView" />
+
+    <Button
+        android:fontFamily="serif"
+        android:textColor="#FFFFFF"
+        android:background="#EA1F64"
+
+        android:onClick="nextwork"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Next"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.personalinformation">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PersonalInformation">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PersonalDetailsActivity" />
+        <activity android:name=".AcademicDetailsActivity" />
+        <activity android:name=".AchievementsActivity" />
+        <activity android:name=".FieldOfInterestActivity" />
+        <activity android:name=".ProjectDetailsActivity" />
+        <activity android:name=".ReferenceDetailsActivity" />
+        <activity android:name=".WorkExperienceActivity" />
+        <activity android:name=".CoverLetterActivity" />
+        <activity android:name=".PhotoActivity" />
+        <activity android:name=".SignActivity" />
+    </application>
+
+</manifest>

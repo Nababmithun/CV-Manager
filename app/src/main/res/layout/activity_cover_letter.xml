@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:background="#FFFFFF"
+
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.projects.chintangandhi.cvappaa.CoverLetterActivity">
+
+        <TextView
+            android:fontFamily="serif"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Cover Letter"
+            android:id="@+id/coverLetterTextView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:fontFamily="serif"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Date:"
+            android:id="@+id/dateTextView"
+            android:layout_below="@+id/coverLetterTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="27dp" />
+
+        <EditText
+            android:fontFamily="serif"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/dateEditText"
+            android:layout_below="@+id/dateTextView"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:fontFamily="serif"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Receiver&apos;s address:"
+            android:id="@+id/receiversTextView"
+            android:layout_below="@+id/dateEditText"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:fontFamily="serif"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/recAddressEditText"
+            android:layout_below="@+id/receiversTextView"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Body:"
+            android:id="@+id/bodyTextView"
+            android:layout_below="@+id/recAddressEditText"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:fontFamily="serif"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:layout_marginTop="250dp"
+            android:id="@+id/bodyEditText"
+            android:layout_below="@+id/bodyTextView"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:fontFamily="serif"
+            android:textColor="#FFFFFF"
+            android:background="#EA1F64"
+
+            android:id="@+id/saveButtonCover"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Save"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/bodyEditText"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>
